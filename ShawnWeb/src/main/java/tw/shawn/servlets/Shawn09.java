@@ -13,7 +13,7 @@ import java.io.InputStream;
 
 @WebServlet("/Shawn09")
 @MultipartConfig( location = 
-		"C:\\Users\\ysmso\\Desktop\\upload")
+		"C:\\Users\\ysmso\\git\\JavaWeb\\ShawnWeb\\src\\main\\webapp\\upload")
 public class Shawn09 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
