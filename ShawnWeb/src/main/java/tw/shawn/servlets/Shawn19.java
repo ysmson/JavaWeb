@@ -19,7 +19,7 @@ public class Shawn19 extends HttpServlet {
 		String view = (String)request.getAttribute("view");
 		
 		try {
-			String webContent = ShawnUtils.LoadView(view);
+			String webContent = ShawnUtils.loadView(view);
 			String web = webContent.replaceAll("@x@", x)
 					.replaceAll("@y@", y)
 					.replaceAll("@result@", result);

@@ -7,10 +7,14 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<form action="Shawn27.jsp">
-			Account: <input name="account" /><br />
-			Name: <input name="cname" /><br />
-			<input type="submit" value="Test" />
-		</form>
+		Name: ${pageScope.myname }<br />
+		Name: ${requestScope.myname }<br />
+		Name: ${sessionScope.myname }<br />
+		Name: ${applicationScope.myname }<br />
 	</body>
 </html>
+
+
+
+
+

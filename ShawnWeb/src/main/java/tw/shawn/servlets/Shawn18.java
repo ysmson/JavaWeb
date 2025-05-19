@@ -21,7 +21,7 @@ public class Shawn18 extends HttpServlet {
 		    view = "default"; // 你可以設定為某個預設的 HTML，如 default.html 或 error.html
 		}
 		try {
-			String webContent = ShawnUtils.LoadView(view);
+			String webContent = ShawnUtils.loadView(view);
 			response.getWriter().print(String.format(webContent, x, y,result));
 		}catch(Exception e) {
 			System.out.println(e);

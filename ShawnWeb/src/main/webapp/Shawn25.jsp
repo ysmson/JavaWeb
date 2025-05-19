@@ -5,7 +5,7 @@
 	Member member1 = new Member();
 	member1.setId(1); member1.setAccount("brad"); member1.setCname("Brad");
 %>
-<jsp:useBean id="member2" class="tw.brad.apis.Member"></jsp:useBean>
+<jsp:useBean id="member2" class="tw.shawn.apis.Member"></jsp:useBean>
 <jsp:setProperty property="id" name="member2" value="2" />
 <jsp:setProperty property="account" name="member2" value="peter" />
 <jsp:setProperty property="cname" name="member2" value="Peter" />
