@@ -1,14 +1,14 @@
 package tw.shawn.apis;
 
 public class Member {
-	private int id;
+	private long id;
 	private String account, cname;
 	private String icon;	// base64 format
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getAccount() {
@@ -30,5 +30,9 @@ public class Member {
 		this.icon = icon;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("%s:%s", account, cname);
+	}
 	
 }
